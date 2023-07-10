@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Panache</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+   <div class="navbar-d">
+      <img src="images/logo.jpeg" alt="logo" class="logo">
+      <div class="nav-links-d">
+         <a href="index.html" class="nav-link-d">Home</a>
+         <a href="about.html" class="nav-link-d">About Us</a>
+         <a href="" class="nav-link-d active-nav-link">Contact Us</a>
+         <a href="courses.html" class="nav-link-d">Courses</a>
+         <a href="ielts.html" class="nav-link-d">IELTS</a>
+      </div>
+      <!-- hamburger menu==== -->
+      <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span
+            class="bottom"></span></div>
+      <div class="overlay" id="overlay">
+         <nav class="overlay-menu">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="">Contact</a></li>
+               <li><a href="courses.html">Courses</a></li>
+               <li><a href="courses.html">IELTS</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+   <!-- contact ================================================= -->
+   <div class="contact-container">
+      <div class="cards-left">
+         <div class="contact-card">
+            <div class="box-tittle-row">
+               <img class="contact-icon" src="images/contact-address.png" alt="">
+               <span class="title">Address</span>
+            </div>
+            <div>
+               103, Shyamal Apartments / Complex, Near Vyaswadi cross roads, Bhavsar hostel ring road, New Vadaj, Ahmedabad, Gujarat, India. 380013 
+
+                  Nearby Connectivity 
+                  Vadaj Metro station 
+                  & 
+                  Bhavsar hostel BRTS
+            </div>
+         </div>
+   
+         <div class="contact-card">
+            <div class="box-tittle-row"> 
+               <img class="contact-icon" src="images/contact-phone.png" alt="">
+               <span class="title">Phone No</span>
+            </div>
+            <div>
+               +91 98250 16245
+            </div>
+         </div>
+   
+         <div class="contact-card">
+            <div class="box-tittle-row">
+               <img class="contact-icon" src="images/contact-email.png" alt="">
+               <span class="title">Email</span>
+            </div>
+            <div>
+              thepanache2023@gmail.com
+            </div>
+         </div>
+      </div>
+      
+      <div class="form-right">
+         <div class="container">  
+            <form id="contact" action="https://formsubmit.co/thepanache2023@gmail.com" method="POST">
+              <h3>Send us your info</h3>
+              <fieldset>
+                <input placeholder="Full Name" name="Name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" name="Email" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number" name="Phone" type="tel" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Country Interested" name="CountryInterested" type="text" tabindex="4" required>
+              </fieldset>
+              <fieldset>
+               <input placeholder="Purpose of visit" name="PurposeOfVisit" type="text" tabindex="5" required>
+             </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your Message Here...." name="Message" tabindex="6" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+           
+            
+          </div>
+      </div>
+   </div>
+
+   <!-- footer ===================================================================== -->
+   <div class="footer-container">
+      <div class="footer-box">
+         <div class="footer-col footer-col-1">
+            <div>
+               <img class="footer-logo" src="images/logo.jpeg" alt="">
+               <h2 class="footer-logo-text">The Panache Overseas</h2>
+               <p class="footer-address">103, Shyamal Apartments / Complex, Near Vyaswadi cross roads, Bhavsar hostel ring road, New Vadaj, Ahmedabad, Gujarat, India. 380013 
+
+                  Nearby Connectivity:
+                  Vadaj Metro station 
+                  & 
+                  Bhavsar hostel BRTS
+               </p>
+            </div>
+         </div>
+         <div class="footer-col footer-col-2">
+            <div>
+               <a href="index.html">HOME</a>
+               <a href="">ABOUT US</a>
+               <a href="contact.html">CONTACT US</a>
+               <a href="courses.html">COURSES</a>
+               <a href="ielts.html">IELTS</a>
+            </div>
+         </div>
+         <div class="footer-col footer-col-3">
+            <p>
+               The Panache is a one-stop solution for overseas studies, providing students with visa and passport
+               assistance, and customized learning to help them reach their goals.
+               We make sure you get the best resources and assistance to help you reach your highest potential.
+            </p>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+      let toggle = document.querySelector('#toggle');
+
+      toggle.addEventListener('click', () => {
+         toggle.classList.toggle('active');
+         document.querySelector('#overlay').classList.toggle('open');
+      })
+   </script>
+</body>
+
+</html>
